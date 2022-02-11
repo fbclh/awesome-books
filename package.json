@@ -1,0 +1,20 @@
+{
+  "name": "awesome-books-es6",
+  "version": "1.0.0",
+  "description": "- Setup your project:   - Create a new directory and initialize it with git. [X]   - Use `npm init -y` command to create package.json file.   - Create the entry point for your JavaScript code called `index.js`    - Create `index.css` file for your styles.   - Create the main `index.html` file. Link your `index.js` and `index.css` files there.   - Create a directory called `modules`. - Re-create your _Awesome books_ app following the rules:   - Use ES6 syntax.   - Divide your code into modules. Save each module in a separate file in the `modules` dir. Import modules in the `index.js` file. For this exercise - the more modules the better!   - Keep all funcionalities of the app without errors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbclh/awesome-books-es6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fbclh/awesome-books-es6/issues"
+  },
+  "homepage": "https://github.com/fbclh/awesome-books-es6#readme"
+}
