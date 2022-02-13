@@ -4,7 +4,7 @@ const Book = class {
   constructor(title, author) {
     this.title = title;
     this.author = author;
-    this.books = [];
+    this.books = new Array([]);
   }
 
   populateFields = () => {
