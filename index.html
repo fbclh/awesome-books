@@ -2,94 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="" />
     <meta name="description" content="" />
-
-    <!-- Tittle -->
     <title>Awesome Books</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="index.css" />
-
-    <!-- Modern Normalize -->
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="node_modules/modern-normalize/modern-normalize.css"
     />
-
-    <!-- JS -->
-    <script src="index.js" defer></script>
-    <!-- <script src="index.js" type="module"></script> -->
+    <script src="index.js" type="module"></script>
   </head>
+
   <body>
     <!-- Navigation -->
     <nav class="nav">
       <div class="nav__container">
         <div><p class="nav__logo">Awesome Books</p></div>
         <div class="nav__links">
-          <p class="nav__link-1" onclick="toggleInfo('list')">List</p>
-          <span>|</span>
-          <p class="nav__link-2" onclick="toggleInfo('add')">Add New</p>
-          <span>|</span>
-          <p class="nav__link-3" onclick="toggleInfo('info')">info</p>
+          <a class="nav__link">List</a>
+          <a class="nav__link">Add New</a>
+          <a class="nav__link">Contact</a>
         </div>
       </div>
-      <nav class="nav__test">
-        <div class="nav__date">
-          <p class="nav__para"></p>
+      <div class="clock">
+        <div class="clock__container">
+          <div class="clock__time"></div>
         </div>
-      </nav>
+      </div>
     </nav>
 
     <!-- Book List -->
-    <section class="main__list">
-      <header class="header">
-        <h2 class="header__title">All awesome books</h2>
-      </header>
-      <section class="booklist">
-        <ul class="listing"></ul>
-      </section>
+    <section class="all-books">
+      <h2 class="all-books__title">All books</h2>
+      <div class="all-books__list"></div>
     </section>
 
-    <!-- Add Book Input -->
-    <section class="form">
-      <h2 class="form__header">Add new book</h2>
-      <input class="form__title" type="text" placeholder="Title" name="title" />
-      <input
-        class="form__author"
-        type="text"
-        placeholder="Author"
-        name="author"
-      />
-      <div class="form__btn-container">
-        <button class="form__btn" type="button">Add</button>
-      </div>
+    <!-- Add Book -->
+    <section class="add-book hidden">
+      <h2 class="add-book__title">Add new book</h2>
+      <form class="add-book__form">
+        <ul class="add-book__ul">
+          <li class="add-book__li">
+            <input
+              class="add-book__input"
+              type="text"
+              name="title"
+              placeholder="Title"
+              required
+            />
+          </li>
+          <li class="add-book__li">
+            <input
+              class="add-book__input"
+              type="text"
+              name="author"
+              placeholder="Author"
+              required
+            />
+          </li>
+          <li class="add-book__li">
+            <button type="submit">Add</button>
+          </li>
+        </ul>
+      </form>
     </section>
 
     <!-- Contact -->
-    <section class="info">
-      <div class="info__container">
-        <h2 class="form__header">Contact information</h2>
-        <p class="info__text">
-          Do have any quetions or you just want to say "Hello"? <br />You can
-          reach out to us:
-        </p>
-        <ul>
-          <li>Our e-mail mail@mail.com</li>
-          <li>Our phone number 00 000 000 001</li>
-          <li>Our address Somewhere 33, 1000 Planet Earth</li>
-        </ul>
-      </div>
+    <section class="contact hidden">
+      <h2 class="contact__title">Contact Information</h2>
+      <p>Do you have any questions or you just want to say "Hello"?</p>
+      <p>You can reach out to us!</p>
+      <ul class="contact__details">
+        <li class="contact__list">Our email: mail@mail.com</li>
+        <li class="contact__list">Our phone number: 1234567</li>
+        <li class="contact__list">Our address: Streetname 123 City, Country</li>
+      </ul>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="footer__container">
-        <p class="footer__para">Copyright &copy; Awesome Books</p>
+        <p class="footer__p">Copyright &copy; Awesome Books</p>
       </div>
     </footer>
   </body>

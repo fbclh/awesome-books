@@ -1,0 +1,213 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 0.25rem;
+  background: url('images/background.png') bottom center;
+  background-size: cover;
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 80vw;
+  max-width: 60%;
+  margin: auto;
+}
+
+.nav__logo {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsla(0, 0%, 100%, 0.9);
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.nav__link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  min-width: 80vw;
+  max-width: 60%;
+  margin: auto;
+}
+
+.clock__container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.clock__time {
+  margin-top: 0.5rem;
+  color: hsla(0, 0%, 100%, 0.9);
+  font-size: 0.85rem;
+}
+
+/*
+  ========================================
+  Book List
+  ========================================
+*/
+
+span {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(211, 211, 211, 0.3);
+}
+
+/*
+  ========================================
+  Add Book
+  ========================================
+*/
+
+.add-book__input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.125rem hsla(0, 0%, 100%, 0.9) solid;
+  background-color: hsla(0, 0%, 100%, 0);
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
+.add-book__input::placeholder {
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
+.add-book__li {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.all-books,
+.add-book {
+  display: block;
+  width: 90%;
+  max-width: 32rem;
+}
+
+.all-books__list {
+  max-width: 32rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  border: 0.125rem solid hsla(0, 0%, 100%, 0.9);
+}
+
+.book-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.all-books__title,
+.add-book__title,
+.contact__title {
+  color: hsla(0, 0%, 100%, 0.9);
+  text-align: center;
+}
+
+.form-input {
+  max-width: 26rem;
+  margin: 0 auto;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: 2px hsla(0, 0%, 100%, 0.9) solid;
+  background: hsla(0, 0%, 100%, 0);
+  color: hsla(0, 0%, 100%, 0.9);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/*
+  ========================================
+  Contact
+  ========================================
+*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__title {
+  margin-bottom: 2rem;
+}
+
+.contact > p {
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2rem;
+  padding-left: 0;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60vw;
+  max-width: 90vw;
+  margin: auto;
+  padding: 0.313rem;
+}
+
+.footer__p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Hide the form input and or contact section */
+.hidden {
+  display: none;
+}

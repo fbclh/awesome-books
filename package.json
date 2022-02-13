@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/fbclh/awesome-books-es6/issues"
   },
-  "homepage": "https://github.com/fbclh/awesome-books-es6#readme"
+  "homepage": "https://github.com/fbclh/awesome-books-es6#readme",
+  "devDependencies": {
+    "parcel": "^2.3.1"
+  },
+  "dependencies": {
+    "luxon": "^2.3.0",
+    "modern-normalize": "^1.1.0"
+  }
 }
