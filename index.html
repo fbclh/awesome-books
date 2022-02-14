@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Modern Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js" type="module"></script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav__container">
+        <div><p class="nav__logo">Awesome Books</p></div>
+        <div class="nav__links">
+          <a class="nav__link">List</a>
+          <a class="nav__link">Add New</a>
+          <a class="nav__link">Contact</a>
+        </div>
+      </div>
+      <div class="clock">
+        <div class="clock__container">
+          <div class="clock__time"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Book List -->
+    <section class="all-books">
+      <h2 class="all-books__title">All books</h2>
+      <div class="all-books__list"></div>
+    </section>
+
+    <!-- Add Book -->
+    <section class="add-book hidden">
+      <h2 class="add-book__title">Add new book</h2>
+      <form class="add-book__form">
+        <ul class="add-book__ul">
+          <li class="add-book__li">
+            <input
+              class="add-book__input"
+              type="text"
+              name="title"
+              placeholder="Title"
+              required
+            />
+          </li>
+          <li class="add-book__li">
+            <input
+              class="add-book__input"
+              type="text"
+              name="author"
+              placeholder="Author"
+              required
+            />
+          </li>
+          <li class="add-book__li">
+            <button type="submit">Add</button>
+          </li>
+        </ul>
+      </form>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact hidden">
+      <h2 class="contact__title">Contact Information</h2>
+      <p>Do you have any questions or you just want to say "Hello"?</p>
+      <p>You can reach out to us!</p>
+      <ul class="contact__details">
+        <li class="contact__list">Our email: mail@mail.com</li>
+        <li class="contact__list">Our phone number: 1234567</li>
+        <li class="contact__list">Our address: Streetname 123 City, Country</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__p">Copyright &copy; Awesome Books</p>
+      </div>
+    </footer>
+  </body>
+</html>
