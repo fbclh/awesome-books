@@ -7,10 +7,9 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 0.25rem;
-  background: url('images/background.png') bottom center;
+  background: url("images/background.png") bottom center;
   background-size: cover;
-  color: hsla(0, 0%, 100%, 0.9);
-  /* font-family: system font; */
+  color: hsl(0deg 0% 100% / 90%);
 }
 
 /*
@@ -40,13 +39,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: hsla(0, 0%, 100%, 0.9);
+  color: hsl(0deg 0% 100% / 90%);
   cursor: pointer;
   gap: 1rem;
 }
 
 .nav__link {
-  color: hsla(0, 0%, 100%, 0.9);
+  color: hsl(0deg 0% 100% / 90%);
 }
 
 .nav__link:hover {
@@ -70,7 +69,7 @@ body {
 
 .clock__time {
   margin-top: 0.5rem;
-  color: hsla(0, 0%, 100%, 0.9);
+  color: hsl(0deg 0% 100% / 90%);
   font-size: 0.85rem;
 }
 
@@ -90,7 +89,7 @@ table {
 }
 
 tr:nth-child(even) {
-  background-color: rgba(211, 211, 211, 0.3);
+  background-color: rgb(211 211 211 / 30%);
 }
 
 /*
@@ -102,14 +101,14 @@ tr:nth-child(even) {
 .add-book__input {
   width: 100%;
   padding: 0.5rem;
-  border: 0.125rem hsla(0, 0%, 100%, 0.9) solid;
-  border-color: hsla(0, 0%, 100%, 0.9);
-  background-color: hsla(0, 0%, 100%, 0);
-  color: hsla(0, 0%, 100%, 0.9);
+  border: 0.125rem hsl(0deg 0% 100% / 90%) solid;
+  border-color: hsl(0deg 0% 100% / 90%);
+  background-color: hsl(0deg 0% 100% / 0%);
+  color: hsl(0deg 0% 100% / 90%);
 }
 
 .add-book__input::placeholder {
-  color: hsla(0, 0%, 100%, 0.9);
+  color: hsl(0deg 0% 100% / 90%);
 }
 
 .add-book__li {
@@ -130,7 +129,7 @@ tr:nth-child(even) {
   max-width: 32rem;
   margin: 0 auto;
   margin-bottom: 4rem;
-  border: 0.125rem solid hsla(0, 0%, 100%, 0.9);
+  border: 0.125rem solid hsl(0deg 0% 100% / 90%);
 }
 
 .book-container {
@@ -143,7 +142,7 @@ tr:nth-child(even) {
 .all-books__title,
 .add-book__title,
 .contact__title {
-  color: hsla(0, 0%, 100%, 0.9);
+  color: hsl(0deg 0% 100% / 90%);
   text-align: center;
 }
 
@@ -154,10 +153,10 @@ tr:nth-child(even) {
 
 button {
   padding: 0.5em 1em;
-  border: 2px hsla(0, 0%, 100%, 0.9) solid;
-  border-color: hsla(0, 0%, 100%, 0.9);
-  background: hsla(0, 0%, 100%, 0);
-  color: hsla(0, 0%, 100%, 0.9);
+  border: 2px hsl(0deg 0% 100% / 90%) solid;
+  border-color: hsl(0deg 0% 100% / 90%);
+  background: hsl(0deg 0% 100% / 0%);
+  color: hsl(0deg 0% 100% / 90%);
   letter-spacing: 1px;
   cursor: pointer;
 }
