@@ -1,4 +1,4 @@
-// import { DateTime } from 'luxon';
+import { DateTime } from 'luxon';
 import Book from './modules/book.js';
 
 const form = document.querySelector('.add-book__form');
@@ -8,11 +8,6 @@ const allBooks = document.querySelector('.all-books');
 const addBook = document.querySelector('.add-book');
 const contact = document.querySelector('.contact');
 const divTime = document.querySelector('.clock__time');
-
-// setInterval(() => {
-//   const dt = DateTime.now().toLocal();
-//   divTime.textContent = dt.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
-// }, 1000);
 
 const inputBook = {};
 const bookObj = new Book();
@@ -56,6 +51,11 @@ form.addEventListener('submit', (e) => {
   bookObj.addBook(new Book(inputBook.title, inputBook.author));
   form.submit();
 });
+
+setInterval(() => {
+  const dt = DateTime.now().toLocal();
+  divTime.textContent = dt.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+}, 1000);
 
 bookObj.displayBooks();
 populateFields();

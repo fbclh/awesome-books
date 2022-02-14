@@ -10,16 +10,19 @@ Awesome books is a simple website that displays a list of books and allows you t
 - Frameworks: None
 - Others: Parcel, npm, luxon, modern-normalize
 
-## Live Demo
-
-[Live Demo](https://fbclh.github.io/awesome-books/)
-
-
 ## Getting Started
 
 Run
 ```sh
-   git clone git@github.com:fbclh/awesome-books
+   git clone https://github.com/fbclh/awesome-books-es6.git
+```
+Run
+```sh
+   npx parcel index.html      
+```
+Then copy and paste in the browser
+```sh
+  http://localhost:1234
 ```
 ## Authors
 ### Fabio Coelho
